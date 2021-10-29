@@ -8,18 +8,18 @@ public class Parking {
 		Scanner entrada = new Scanner(System.in);
 
 		Menu menu = new Menu(7, 10, 25, 30, 2, 8);
-		
+
 		int decision = -1;
-		
+
 		while(decision != 0) {
 			menu.print();
 			decision = entrada.nextInt();
-			
+
 			switch (decision) {
 			case 1:
 				menu.addMoto();
 				break;
-				
+
 			case 2:
 				menu.addTurismo();
 				break;
@@ -27,19 +27,19 @@ public class Parking {
 			case 3:
 				menu.addCamion();
 				break;
-				
+
 			case 4:
 				menu.removeMoto();
 				break;
-				
+
 			case 5:
 				menu.removeTurismo();
 				break;
-				
+
 			case 6:
 				menu.removeCamion();
 				break;
-				
+
 			default:
 				break;
 			}
@@ -97,7 +97,7 @@ public class Parking {
 			}
 			else System.out.println("\n\nNo hay más despacio\n\n");
 		}
-		
+
 		public void addCamion() {
 			if(this.camiones_ocupados + 1 <= this.camiones_max) {
 				++this.camiones_ocupados;
@@ -105,7 +105,7 @@ public class Parking {
 			}
 			else System.out.println("\n\nNo hay más despacio\n\n");
 		}
-		
+
 		public void removeMoto() {
 			if(this.motos_ocupados - 1 >= 0) {
 				--this.motos_ocupados;
@@ -113,7 +113,7 @@ public class Parking {
 			}
 			else System.out.println("\n\nNo hay transporte\n\n");
 		}
-		
+
 		public void removeTurismo() {
 			if(this.turismos_ocupados - 1 >= 0) {
 				--this.turismos_ocupados;
@@ -121,7 +121,7 @@ public class Parking {
 			}
 			else System.out.println("\n\nNo hay transporte\n\n");
 		}
-		
+
 		public void removeCamion() {
 			if(this.camiones_ocupados - 1 >= 0) {
 				--this.camiones_ocupados;
@@ -132,7 +132,7 @@ public class Parking {
 
 		public void print() {
 			System.out.println("PARKING ");
-			System.out.println("=========");
+			System.out.println("=======");
 			System.out.println();
 
 			System.out.println("Vehículo    Ocupadas    Max    Libres");
@@ -144,7 +144,7 @@ public class Parking {
 
 			System.out.println();
 			System.out.println("MENU");
-			System.out.println("=====");
+			System.out.println("====");
 			System.out.println("-Entrada: Moto(1), Turismo(2), Camión(3)");
 			System.out.println("-Salida: Moto(4), Turismo(5), Camión(6)");
 			System.out.println("-Salir(0)");
