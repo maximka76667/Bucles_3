@@ -87,7 +87,7 @@ public class Parking {
 				++this.motos_ocupados;
 				--this.motos_libres;
 			}
-			else System.out.println("\n\nNo hay más despacio\n\n");
+			else System.out.println("\n\nNo quedan plazas libres de aparcamiento de esa categoría\n\n");
 		}
 
 		public void addTurismo() {
@@ -95,7 +95,7 @@ public class Parking {
 				++this.turismos_ocupados;
 				--this.turismos_libres;
 			}
-			else System.out.println("\n\nNo hay más despacio\n\n");
+			else System.out.println("\n\nNo quedan plazas libres de aparcamiento de esa categoría\n\n");
 		}
 
 		public void addCamion() {
@@ -103,7 +103,7 @@ public class Parking {
 				++this.camiones_ocupados;
 				--this.camiones_libres;
 			}
-			else System.out.println("\n\nNo hay más despacio\n\n");
+			else System.out.println("\n\nNo quedan plazas libres de aparcamiento de esa categoría\n\n");
 		}
 
 		public void removeMoto() {
@@ -111,7 +111,7 @@ public class Parking {
 				--this.motos_ocupados;
 				++this.motos_libres;
 			}
-			else System.out.println("\n\nNo hay transporte\n\n");
+			else System.out.println("\n\nNo hay vehículos de esa categoría en el parking\n\n");
 		}
 
 		public void removeTurismo() {
@@ -119,7 +119,7 @@ public class Parking {
 				--this.turismos_ocupados;
 				++this.turismos_libres;
 			}
-			else System.out.println("\n\nNo hay transporte\n\n");
+			else System.out.println("\n\nNo hay vehículos de esa categoría en el parking\n\n");
 		}
 
 		public void removeCamion() {
@@ -127,7 +127,7 @@ public class Parking {
 				--this.camiones_ocupados;
 				++this.camiones_libres;
 			}
-			else System.out.println("\n\nNo hay transporte\n\n");
+			else System.out.println("\n\nNo hay vehículos de esa categoría en el parking\n\n");
 		}
 
 		public void print() {
