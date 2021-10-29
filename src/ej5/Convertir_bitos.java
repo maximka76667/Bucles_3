@@ -21,7 +21,7 @@ public class Convertir_bitos {
 		String unidad_final = entrada.nextLine();
 		entrada.close();
 		
-		long cantidad_final = 1;
+		double cantidad_final = 1;
 		double multiplicador = b / 8;
 		double divisor = b / 8;
 		
@@ -67,7 +67,7 @@ public class Convertir_bitos {
 			break;
 		}
 		
-		cantidad_final = (long) Math.floor(cantidad_origen * (multiplicador / divisor));
+		cantidad_final = Math.floor(cantidad_origen * (multiplicador / divisor) * 1000.0) / 1000.0;
 		
 		System.out.println(cantidad_origen + " " + unidad_origen + " = " + cantidad_final + " " + unidad_final);
 	}
