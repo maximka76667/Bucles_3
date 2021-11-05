@@ -10,6 +10,7 @@ public class Notas_alumnos {
 		double suma_sistemas = 0;
 		double suma_program = 0;
 		double suma_bd = 0;
+		double nota = 0;
 		double nota_max = -1;
 		double nota_min = -1;
 		
@@ -20,25 +21,28 @@ public class Notas_alumnos {
 			
 			System.out.println("\nAlumno nº" + i + ":\n");
 			
+			// Sistemas
 			for(int j = 1; j <= 3; j++) {
 				System.out.print("Sistemas nota " + j + ": ");
-				double nota = entrada.nextDouble();
+				nota = entrada.nextDouble();
 				suma_sistemas += nota;
 				if(nota > nota_max) nota_max = nota;
 				if(nota_min == -1 || nota < nota_min) nota_min = nota;
 			}
 			
+			// Programacion
 			for(int j = 1; j <= 3; j++) {
 				System.out.print("Program nota " + j + ": ");
-				double nota = entrada.nextDouble();
+				nota = entrada.nextDouble();
 				suma_program += nota;
 				if(nota > nota_max) nota_max = nota;
 				if(nota_min == -1 || nota < nota_min) nota_min = nota;
 			}
 			
+			// BBDD
 			for(int j = 1; j <= 3; j++) {
 				System.out.print("BD nota " + j + ": ");
-				double nota = entrada.nextDouble();
+				nota = entrada.nextDouble();
 				suma_bd += nota;
 				if(nota > nota_max) nota_max = nota;
 				if(nota_min == -1 || nota < nota_min) nota_min = nota;
